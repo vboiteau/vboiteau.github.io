@@ -78,6 +78,18 @@
       "title":"Dotfiles",
       "github":"https://github.com/vboiteau/dotfiles",
       "description":"Collection of my dotfiles."
+    },
+    {
+      "title":"Site de commande au restaurant en ligne",
+      "description":"Site fait dans le cadre d'un cours universitaire. Effectué en node.js, HTML5, CSS"
+    },
+    {
+      "title":"Gallerie d'image",
+      "description":"Visualisation d'image de type bmp dans un logiciel programmé en Java. Le logiciel fut programmé dans eclipse."
+    },
+    {
+      "title":"Convertisseur et analyseur SNR de fichier WAV",
+      "description":"Un logiciel utilisant le système de ligne de commande de eclipse pour compresser un fichier .wav 16 bits à 8 bits. Le programme a été programmé en Java."
     }
   ]
 }
