@@ -50,6 +50,17 @@
       "solo":true,
       "slug":"portfolio1",
       "images":["portfolio1_1.png"]
+    },
+    {
+      "title":"interface de MeTravelPlanner",
+      "tech":["HTML5","CSS3","JavaScript","Google Maps API"],
+      "description":"Ce Projet consistait en la conception d'interface d'une application de planification de voyage. L'application comprends des enjeux de réseaux sociaux. Le projet a été entrepris lors d'un de mes cours à l'ÉTS.",
+      "solo":true,
+      "slug":"imetravelplanner",
+      "images":[
+        "imetravelplanner_1.png",
+        "imetravelplanner_2.png"
+      ]
     }
   ]
 }
