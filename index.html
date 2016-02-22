@@ -15,13 +15,16 @@
       <h3>
         {{title}}
       </h3>
+      <h4>Technologies</h4>
       <ul>
         {{#each tech}}
           <li>{{this}}</li>
         {{/each}}
       </ul>
+      <h4>Description</h4>
       <p>{{description}}</p>
       {{#unless solo}}
+        <h4>Participation</h4>
         <p>{{participation}}</p>
       {{/unless}}
       <p class="images">
