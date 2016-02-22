@@ -10,6 +10,17 @@
       "images":["timcsf_1.jpg","timcsf_2.jpg","timcsf_3.jpg"]
     },
     {
+      "title":"interface de MeTravelPlanner",
+      "tech":["HTML5","CSS3","JavaScript","Google Maps API"],
+      "description":"Ce Projet consistait en la conception d'interface d'une application de planification de voyage. L'application comprends des enjeux de réseaux sociaux. Le projet a été entrepris lors d'un de mes cours à l'ÉTS.",
+      "solo":true,
+      "slug":"imetravelplanner",
+      "images":[
+        "imetravelplanner_1.png",
+        "imetravelplanner_2.png"
+      ]
+    },
+    {
       "title":"Librairie Traces",
       "tech":["HTML","CSS","jQuery","PHP","MySQLi","Savant3"],
       "description":"Dans ce projet, nous devions développer le site d'une librairie. Nous avions comme tâche de développer tout le côté public permettant de naviguer dans le catalogue, ainsi qu' une portion transactionnelle pour celui-ci. Le projet était de grande envergure, et a duré environ 8 semaines durant notre cinquième session.",
@@ -17,6 +28,14 @@
       "participation":"Ma participation dans ce projet fut davantage du côté de la programmation. J'ai produit le code PHP pour la page du catalogue, la section transactionnelle, la connexion, ainsi que la validation de la commande. Il y a donc eu beaucoup de requêtes MySQLi plus ou moins complexes à implémenter...",
       "slug":"traces",
       "images":["traces_1.jpg","traces_2.jpg"]
+    },
+    {
+      "title":"Portfolio v.2",
+      "tech":["HTML5","CSS3","JSON","Handlebars","Github Pages"],
+      "description":"Deuxième version de mon portfolio fait grâce à Github Pages.",
+      "solo":true,
+      "slug":"portfolio2",
+      "images":[]
     },
     {
       "title":"Drôles de binocles",
@@ -36,31 +55,12 @@
       "images":["nanowar_1.jpg"]
     },
     {
-      "title":"Portfolio v.2",
-      "tech":["HTML5","CSS3","JSON","Handlebars","Github Pages"],
-      "description":"Deuxième version de mon portfolio fait grâce à Github Pages.",
-      "solo":true,
-      "slug":"portfolio2",
-      "images":[]
-    },
-    {
       "title":"Portfolio v.1",
       "tech":["HTML5","CSS3","Polymer","JSON","REST","PHP","MySQLi","jQuery"],
       "description":"La première version de mon portfolio fait sur un hébergeur AMP. Fait en moins de deux jours.",
       "solo":true,
       "slug":"portfolio1",
       "images":["portfolio1_1.png"]
-    },
-    {
-      "title":"interface de MeTravelPlanner",
-      "tech":["HTML5","CSS3","JavaScript","Google Maps API"],
-      "description":"Ce Projet consistait en la conception d'interface d'une application de planification de voyage. L'application comprends des enjeux de réseaux sociaux. Le projet a été entrepris lors d'un de mes cours à l'ÉTS.",
-      "solo":true,
-      "slug":"imetravelplanner",
-      "images":[
-        "imetravelplanner_1.png",
-        "imetravelplanner_2.png"
-      ]
     }
   ]
 }
