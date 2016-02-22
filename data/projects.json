@@ -35,7 +35,17 @@
       "description":"Deuxième version de mon portfolio fait grâce à Github Pages.",
       "solo":true,
       "slug":"portfolio2",
-      "images":[]
+      "images":[],
+      "github":"https://github.com/vboiteau/vboiteau.github.io"
+    },
+    {
+      "title":"Extension Navigateur Firefox",
+      "tech":["xul","CSS","JavaScript"],
+      "description":"Ce projet est uen extension test de prise de note sur navigateur firefox. Produite en fin de technique, ce projet est une extension.",
+      "solo":true,
+      "slug":"spec",
+      "images":[],
+      "github":"https://github.com/vboiteau/projetSpec"
     },
     {
       "title":"Drôles de binocles",
@@ -61,6 +71,13 @@
       "solo":true,
       "slug":"portfolio1",
       "images":["portfolio1_1.png"]
+    }
+  ],
+  "quickies":[
+    {
+      "title":"Dotfiles",
+      "github":"https://github.com/vboiteau/dotfiles",
+      "description":"Collection of my dotfiles."
     }
   ]
 }

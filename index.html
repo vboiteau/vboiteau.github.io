@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Vboiteau Github Page</title>
+  <title>Portfolio - Vincent Boiteau-Robert</title>
 </head>
 <body onload="init()">
   <h1>Vincent Boiteau-Robert</h1>
@@ -28,9 +28,33 @@
         {{#each images}}
           <img src="publics/img/{{this}}" alt="Image représentant le projets actuel" style="max-width:512px">
         {{/each}}
+        {{#if github}}
+          <p><a href="{{github}}">Github Repo</a></p>
+        {{/if}}
+        {{#if link}}
+          <p><a href="{{link}}">Aller au projet</a></p>
+        {{/if}}
       </p>
     </div>
     {{/each}}
+    <h3>Divers projets</h3>
+    <ul>
+    {{#each quickies}}
+      <li>
+        {{#if link}}
+          <a href="{{link}}">
+        {{/if}}
+          {{title}}
+        {{#if link}}
+          </a>
+        {{/if}}
+        {{#if github}}
+          [<a href="{{github}}">Github repository</a>]
+        {{/if}}
+        : {{description}}
+      </li>
+    {{/each}}
+    </ul>
   </script>
   <script type="text/javascript">
     function init() {
