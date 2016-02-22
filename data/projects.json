@@ -1,0 +1,55 @@
+{
+  "projects":[
+    {
+      "title":"TIM du Cégep de Ste-Foy",
+      "tech":["HTML5","CSS3","jQuery","PHP","MySQLi","Wordpress"],
+      "description":"Ce travail fut le projet final de ma technique. Nous avions comme tâche de réaliser le site web de ma technique. Nous étions une équipe de cinq étudiants, le travail c'est échelonné sur une période de 2 mois. Nous avons passé un total de 750 heures de travail sur le projet. Je suis particulièrement fier du résultat finale. Le site était entièrement responsive.",
+      "solo":false,
+      "participation":"Je me suis surtouc concentré sur les requêtes MySQL sur ce projet. Je savais que certains de mes coéquipiers avec plus de difficultés avec cette tâches, alors j'ai utilisé la détection de l'url pour effectuer des requêtes SQL. Ainsi mes collègues avais qu'a utilisé un tableau avec les donnés déjà toutes ordonnées. Ma section fut selon moi un très gros défi. Je devais m'occupé de la liste des diplomés et de l'affichage de leur fiche et projets. La particularité de cette section étais que le contenu étais entré par le diplomé. La page devais donc être adaptable à des textes très cours des textes très long ou une fiche sans photo. J'ai eu aussi la chance d'intégrer une partie du site à l'aide de wordpress avec un de mes collègues. J'ai terminé le tout avec la création d'une section administrative qui permettais à l'étudiant de modifier sa fiche et ses fiches projets.",
+      "slug":"timcsf",
+      "images":["timcsf_1.jpg","timcsf_2.jpg","timcsf_3.jpg"]
+    },
+    {
+      "title":"Librairie Traces",
+      "tech":["HTML","CSS","jQuery","PHP","MySQLi","Savant3"],
+      "description":"Dans ce projet, nous devions développer le site d'une librairie. Nous avions comme tâche de développer tout le côté public permettant de naviguer dans le catalogue, ainsi qu' une portion transactionnelle pour celui-ci. Le projet était de grande envergure, et a duré environ 8 semaines durant notre cinquième session.",
+      "solo":false,
+      "participation":"Ma participation dans ce projet fut davantage du côté de la programmation. J'ai produit le code PHP pour la page du catalogue, la section transactionnelle, la connexion, ainsi que la validation de la commande. Il y a donc eu beaucoup de requêtes MySQLi plus ou moins complexes à implémenter...",
+      "slug":"traces",
+      "images":["traces_1.jpg","traces_2.jpg"]
+    },
+    {
+      "title":"Drôles de binocles",
+      "tech":["FDT","ActionScript3","Air","Flex","XML"],
+      "description":"Dans le cadre de ce projet, nous devions créer une application pour tablette qui permettait à l'utilisateur de créer un avatar. L'utilisateur avait le choix entre 4 têtes, 4 corps et 4 paires de jambes différentes. Nous devions donc adapter notre projet à l'interface tactile et aux enjeux des plateformes mobiles.",
+      "solo":false,
+      "participation":"Dans ce projet, je me suis concentré sur la programmation. J'ai fait l'entièreté de la programmation nécessaire au bon fonctionnement de l'application. J'ai donc développé les fonctionnalités de gestion d'un fichier XML de sauvegarde externe. J'ai aussi dû gérer les fonctionnalités de changement de pages à l'aide d’un code basé du patron de conception MVC. Mon coéquipier, pour sa part, s'est occupé de la conception visuelle.",
+      "slug":"binocles",
+      "images":["binocles_1.jpg","binocles_2.jpg"]
+    },
+    {
+      "title":"NanoWar",
+      "tech":["ActionScript3","Flash Professional"],
+      "description":"En fin de deuxième année, nous avons eu la chance de développer un jeu en Flash. Ce projet nous a permis de mettre notre créativité à l’épreuve. J'ai donc décidé de créer un jeu qui était en lien avec mon intérêt pour la science; dans mon contexte, une molécule d'eau devait se défendre contre une invasion de molécules de potassium.",
+      "solo":true,
+      "slug":"nanowar",
+      "images":["nanowar_1.jpg"]
+    },
+    {
+      "title":"Portfolio v.2",
+      "tech":["HTML5","CSS3","JSON","Handlebars","Github Pages"],
+      "description":"Deuxième version de mon portfolio fait grâce à Github Pages.",
+      "solo":true,
+      "slug":"portfolio2",
+      "images":[]
+    },
+    {
+      "title":"Portfolio v.1",
+      "tech":["HTML5","CSS3","Polymer","JSON","REST","PHP","MySQLi","jQuery"],
+      "description":"La première version de mon portfolio fait sur un hébergeur AMP. Fait en moins de deux jours.",
+      "solo":true,
+      "slug":"portfolio1",
+      "images":["portfolio1_1.png"]
+    }
+  ]
+}

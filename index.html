@@ -4,7 +4,61 @@
   <meta charset="UTF-8">
   <title>Vboiteau Github Page</title>
 </head>
-<body>
-  <h1>Hey</h1>
+<body onload="init()">
+  <h1>Vincent Boiteau-Robert</h1>
+  <h2>Développeur Web et Intégrateur multimédia</h2>
+  <div id="projects"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script id="projects-template" type="text/x-handlebars-template">
+    {{#each projects}}
+    <div class="project">
+      <h3>
+        {{title}}
+      </h3>
+      <ul>
+        {{#each tech}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      {{#unless solo}}
+        <p>{{participation}}</p>
+      {{/unless}}
+      <p class="images">
+        {{#each images}}
+          <img src="publics/img/{{this}}" alt="Image représentant le projets actuel" style="max-width:512px">
+        {{/each}}
+      </p>
+    </div>
+    {{/each}}
+  </script>
+  <script type="text/javascript">
+    function init() {
+      loadJSON(function(response) {
+      // Parse JSON string into object
+        var actual_JSON = JSON.parse(response);
+        loadProjects(actual_JSON);
+      });
+    }
+
+    function loadJSON(callback) {
+       var xobj = new XMLHttpRequest();
+           xobj.overrideMimeType("application/json");
+       xobj.open('GET', 'data/projects.json', true); // Replace 'my_data' with the path to your file
+       xobj.onreadystatechange = function () {
+             if (xobj.readyState == 4 && xobj.status == "200") {
+               // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+               callback(xobj.responseText);
+             }
+       };
+       xobj.send(null);
+    }
+
+    function loadProjects(json){
+      var source = document.querySelector("#projects-template").innerHTML;
+      var template = Handlebars.compile(source);
+      document.querySelector("#projects").innerHTML = template(json);
+    }
+  </script>
 </body>
 </html>
