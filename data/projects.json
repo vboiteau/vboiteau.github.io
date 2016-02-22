@@ -16,8 +16,8 @@
       "solo":true,
       "slug":"imetravelplanner",
       "images":[
-        "imetravelplanner_1.png",
-        "imetravelplanner_2.png"
+        "imetravelplanner_1.jpg",
+        "imetravelplanner_2.jpg"
       ]
     },
     {
@@ -70,7 +70,7 @@
       "description":"La première version de mon portfolio fait sur un hébergeur AMP. Fait en moins de deux jours.",
       "solo":true,
       "slug":"portfolio1",
-      "images":["portfolio1_1.png"]
+      "images":["portfolio1_1.jpg"]
     }
   ],
   "quickies":[
