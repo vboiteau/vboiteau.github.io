@@ -88,6 +88,10 @@
       "description":"Visualisation d'image de type bmp dans un logiciel programmé en Java. Le logiciel fut programmé dans eclipse."
     },
     {
+      "title":"Formulaire de commande en ligne",
+      "description":"J'ai fait un petit formulaire de commande pour un projet d'un de mes amis. De plus, une confirmation de courriel se fait à l'aide de PHPMailer."
+    },
+    {
       "title":"Convertisseur et analyseur SNR de fichier WAV",
       "description":"Un logiciel utilisant le système de ligne de commande de eclipse pour compresser un fichier .wav 16 bits à 8 bits. Le programme a été programmé en Java."
     }

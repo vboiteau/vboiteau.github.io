@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio - Vincent Boiteau-Robert</title>
+  <link rel="stylesheet" href="/css/normalize.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700,400" rel="stylesheet" type="text/css"/>
 </head>
 <body onload="init()">
   <h1>Vincent Boiteau-Robert</h1>
@@ -29,7 +32,7 @@
       {{/unless}}
       <p class="images">
         {{#each images}}
-          <img src="publics/img/{{this}}" alt="Image représentant le projets actuel" style="max-width:512px">
+          <img src="img/{{this}}" alt="Image représentant le projets actuel" style="max-width:512px">
         {{/each}}
         {{#if github}}
           <p><a href="{{github}}">Github Repo</a></p>

@@ -1,0 +1,12 @@
+@import 'colors-palette';
+
+body{
+  font-family:"Roboto Mono","Helvetica",sans-serif;
+  background-color: color($grey,900);
+  color:color($grey,50);
+}
+
+a{
+  text-decoration: none;
+  color: color($amber,500);
+}
