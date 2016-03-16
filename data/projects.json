@@ -92,6 +92,10 @@
       "description":"J'ai fait un petit formulaire de commande pour un projet d'un de mes amis. De plus, une confirmation de courriel se fait à l'aide de PHPMailer."
     },
     {
+      "title":"PHP cron job to send me sms about weather of the day",
+      "description":"J'ai créé un petit script PHP qui est sur mon server et m'envoie la température par SMS à chaque matin. Petit projet de 2h, mais super instructif."
+    },
+    {
       "title":"Convertisseur et analyseur SNR de fichier WAV",
       "description":"Un logiciel utilisant le système de ligne de commande de eclipse pour compresser un fichier .wav 16 bits à 8 bits. Le programme a été programmé en Java."
     }
