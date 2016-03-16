@@ -8,9 +8,11 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700,400" rel="stylesheet" type="text/css"/>
 </head>
 <body onload="init()">
-  <h1>Vincent Boiteau-Robert</h1>
-  <h2>Développeur Web et Intégrateur multimédia</h2>
-  <div id="projects"></div>
+  <div class="container">
+    <h1>Vincent Boiteau-Robert</h1>
+    <h2>Développeur Web et Intégrateur multimédia</h2>
+    <div id="projects"></div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script id="projects-template" type="text/x-handlebars-template">
     {{#each projects}}
@@ -32,7 +34,7 @@
       {{/unless}}
       <p class="images">
         {{#each images}}
-          <img src="img/{{this}}" alt="Image représentant le projets actuel" style="max-width:512px">
+          <img src="img/{{this}}" alt="Image représentant le projets actuel">
         {{/each}}
         {{#if github}}
           <p><a href="{{github}}">Github Repo</a></p>
@@ -43,24 +45,26 @@
       </p>
     </div>
     {{/each}}
-    <h3>Divers projets</h3>
-    <ul>
-    {{#each quickies}}
-      <li>
-        {{#if link}}
-          <a href="{{link}}">
-        {{/if}}
-          {{title}}
-        {{#if link}}
-          </a>
-        {{/if}}
-        {{#if github}}
-          [<a href="{{github}}">Github repository</a>]
-        {{/if}}
-        : {{description}}
-      </li>
-    {{/each}}
-    </ul>
+    <div id="divers">
+      <h3>Divers projets</h3>
+      <ul>
+      {{#each quickies}}
+        <li>
+          {{#if link}}
+            <a href="{{link}}">
+          {{/if}}
+            {{title}}
+          {{#if link}}
+            </a>
+          {{/if}}
+          {{#if github}}
+            [<a href="{{github}}">Github repository</a>]
+          {{/if}}
+          : {{description}}
+        </li>
+      {{/each}}
+      </ul>
+    </div>
   </script>
   <script type="text/javascript">
     function init() {
