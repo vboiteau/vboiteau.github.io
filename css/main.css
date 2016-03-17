@@ -23,4 +23,10 @@ a:hover, a:active {
 img {
   max-width: 256px; }
 
+a.social {
+  color: #ffab91; }
+
+a.social:hover, a.social:active {
+  color: #ff7043; }
+
 /*# sourceMappingURL=main.css.map */

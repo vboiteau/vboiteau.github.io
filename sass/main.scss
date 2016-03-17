@@ -30,3 +30,9 @@ a:hover,a:active{
 img{
   max-width:256px;
 }
+a.social{
+  color: color($deep-orange,200);
+}
+a.social:hover,a.social:active{
+  color:color($deep-orange,400);
+}
