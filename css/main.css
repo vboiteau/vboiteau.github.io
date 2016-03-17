@@ -5,10 +5,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #e64a19; }
+  color: #ff8f00; }
 
 a:hover, a:active {
-  color: #bf360c; }
+  color: #ffb300; }
 
 .container {
   max-width: 1024px;
@@ -22,11 +22,5 @@ a:hover, a:active {
 
 img {
   max-width: 256px; }
-
-a.social {
-  color: #ffab91; }
-
-a.social:hover, a.social:active {
-  color: #ff7043; }
 
 /*# sourceMappingURL=main.css.map */

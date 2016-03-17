@@ -8,11 +8,11 @@ body{
 
 a{
   text-decoration: none;
-  color: color($deep-orange,700);
+  color: color($amber,800);
 }
 
 a:hover,a:active{
-  color: color($deep-orange,900);
+  color: color($amber,600);
 }
 
 .container{
@@ -30,9 +30,9 @@ a:hover,a:active{
 img{
   max-width:256px;
 }
-a.social{
-  color: color($deep-orange,200);
-}
-a.social:hover,a.social:active{
-  color:color($deep-orange,400);
-}
+// a.social{
+//   color: color($deep-orange,400);
+// }
+// a.social:hover,a.social:active{
+//   color:color($deep-orange,200);
+// }
