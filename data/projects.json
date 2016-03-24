@@ -12,7 +12,8 @@
     {
       "title":"Quasi-JPEG",
       "tech":"Java",
-      "description":"Ce travail est la création d'un encodeur d'image ppm en image jpeg avec des facteurs de qualité."
+      "description":"Ce travail est la création d'un encodeur d'image ppm en image jpeg avec des facteurs de qualité.",
+      "solo":false
     },
     {
       "title":"interface de MeTravelPlanner",
