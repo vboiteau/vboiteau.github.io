@@ -10,6 +10,11 @@
       "images":["timcsf_1.jpg","timcsf_2.jpg","timcsf_3.jpg"]
     },
     {
+      "title":"Quasi-JPEG",
+      "tech":"Java",
+      "description":"Ce travail est la création d'un encodeur d'image ppm en image jpeg avec des facteurs de qualité."
+    },
+    {
       "title":"interface de MeTravelPlanner",
       "tech":["HTML5","CSS3","JavaScript","Google Maps API"],
       "description":"Ce Projet consistait en la conception d'interface d'une application de planification de voyage. L'application comprends des enjeux de réseaux sociaux. Le projet a été entrepris lors d'un de mes cours à l'ÉTS.",
