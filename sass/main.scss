@@ -20,7 +20,7 @@ a:hover,a:active{
   margin:0 auto;
 }
 
-.project, #divers{
+.card {
   margin:2em 0 4em 0;
   color: color($grey,800);
   background-color: color($grey,100);
@@ -36,3 +36,20 @@ img{
 // a.social:hover,a.social:active{
 //   color:color($deep-orange,200);
 // }
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+$nav-bkgd: color($grey, 100);
+.nav > li {
+    background-color: $nav-bkgd;
+    color: color($grey, 800);
+    display: inline-block;
+    padding: .5em;
+
+    &:hover {
+        background-color: darken($nav-bkgd, 20%);
+    }
+}

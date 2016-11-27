@@ -14,7 +14,7 @@ a:hover, a:active {
   max-width: 1024px;
   margin: 0 auto; }
 
-.project, #divers {
+.card {
   margin: 2em 0 4em 0;
   color: #424242;
   background-color: #f5f5f5;
@@ -22,5 +22,18 @@ a:hover, a:active {
 
 img {
   max-width: 256px; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.nav > li {
+  background-color: #f5f5f5;
+  color: #424242;
+  display: inline-block;
+  padding: .5em; }
+  .nav > li:hover {
+    background-color: #c2c2c2; }
 
 /*# sourceMappingURL=maps/main.css.map */

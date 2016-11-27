@@ -1,6 +1,8 @@
-[
-    {
-        "title": "test",
-        "content": "test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test "
-    }
-]
+{
+    "posts":[
+        {
+            "title": "test",
+            "content": "test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test "
+        }
+    ]
+}

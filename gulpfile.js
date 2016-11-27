@@ -63,7 +63,7 @@ function bundle_js(bundler) {
 }
 
 gulp.task('js', () => {
-    var bundler = browserify('./src/main.js',{debug: true}).transform(babelify, {presets: ['es2015']});
+    var bundler = browserify('./src/main.js',{debug: true}).transform(babelify, {presets: ['es2015']}).transform('hbsfy').transform('bulkify');
     return bundle_js(bundler);
 });
 
@@ -86,6 +86,7 @@ gulp.task('serve', ['images', 'sass', 'js'], () => {
     gulp.watch(config.sass.input, ['sass']);
     gulp.watch('./src/**/*.js', ['js-watch']);
     gulp.watch('*.html', browserSync.reload());
+    gulp.watch('./templates/**/*.handlebars', [browserSync.reload])
 })
 
 gulp.task('default', ['serve']);

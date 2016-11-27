@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
 
 </head>
-<body onload="init()">
+<body>
   <div class="container">
     <h1>Vincent Boiteau-Robert</h1>
     <h2>Développeur Web et Intégrateur multimédia</h2>
@@ -21,89 +21,9 @@
     <p>
       <a href="https://github.com/vboiteau" class="social"><i class="fa fa-github"></i> :  vboiteau</a>
     </p>
-    <div id="projects"></div>
+    <div id="main_content">
+    </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-  <script id="projects-template" type="text/x-handlebars-template">
-    {{#each projects}}
-    <div class="project">
-      <h3>
-        {{title}}
-      </h3>
-      <h4>Technologies</h4>
-      <ul>
-        {{#each tech}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul>
-      <h4>Description</h4>
-      <p>{{description}}</p>
-      {{#unless solo}}
-        <h4>Participation</h4>
-        <p>{{participation}}</p>
-      {{/unless}}
-      <p class="images">
-        {{#each images}}
-          <img src="img/{{this}}" alt="Image représentant le projets actuel">
-        {{/each}}
-        {{#if github}}
-          <p><a href="{{github}}"><i class="fa fa-github"></i> : Github Repo</a></p>
-        {{/if}}
-        {{#if link}}
-          <p><a href="{{link}}">Aller au projet</a></p>
-        {{/if}}
-      </p>
-    </div>
-    {{/each}}
-    <div id="divers">
-      <h3>Divers projets</h3>
-      <ul>
-      {{#each quickies}}
-        <li>
-          {{#if link}}
-            <a href="{{link}}">
-          {{/if}}
-            {{title}}
-          {{#if link}}
-            </a>
-          {{/if}}
-          {{#if github}}
-            [<a href="{{github}}">Github repository</a>]
-          {{/if}}
-          : {{description}}
-        </li>
-      {{/each}}
-      </ul>
-    </div>
-  </script>
-  <script type="text/javascript">
-    function init() {
-      loadJSON(function(response) {
-      // Parse JSON string into object
-        var actual_JSON = JSON.parse(response);
-        loadProjects(actual_JSON);
-      });
-    }
-
-    function loadJSON(callback) {
-       var xobj = new XMLHttpRequest();
-           xobj.overrideMimeType("application/json");
-       xobj.open('GET', 'data/projects.json', true); // Replace 'my_data' with the path to your file
-       xobj.onreadystatechange = function () {
-             if (xobj.readyState == 4 && xobj.status == "200") {
-               // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-               callback(xobj.responseText);
-             }
-       };
-       xobj.send(null);
-    }
-
-    function loadProjects(json){
-      var source = document.querySelector("#projects-template").innerHTML;
-      var template = Handlebars.compile(source);
-      document.querySelector("#projects").innerHTML = template(json);
-    }
-  </script>
-  <script src="js/app.min.js"></script>
+   <script src="js/app.min.js"></script>
 </body>
 </html>
