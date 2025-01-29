@@ -1,2 +1,1 @@
-# vboiteau.github.io
-pages
+# Personal website

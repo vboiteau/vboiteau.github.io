@@ -1,0 +1,18 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"ignore": ["**/dist", "**/.eslintrc.cjs", "src/generated/*", "coverage/*"]
+	},
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"maxSize": 104857600
+	}
+}
