@@ -1,2 +1,0 @@
-# vboiteau.github.io
-pages
