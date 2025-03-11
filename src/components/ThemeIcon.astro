@@ -10,13 +10,21 @@
 <style>
   #themeToggle {
     border: 0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
     background: none;
   }
-  .sun { fill: black; }
+  #themeToggle:hover {
+    background-color: var(--nord-snow-storm-1);
+  }
+  :global(.dark) #themeToggle:hover {
+    background-color: var(--nord-polar-night-2);
+  }
+  .sun { fill: var(--nord-polar-night-0); }
   .moon { fill: transparent; }
 
   :global(.dark) .sun { fill: transparent; }
-  :global(.dark) .moon { fill: white; }
+  :global(.dark) .moon { fill: var(--nord-snow-storm-2); }
 </style>
 
 <script is:inline>
