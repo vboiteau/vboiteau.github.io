@@ -105,8 +105,13 @@ h1 {
 }
 
 a {
-  color: inherit;
+  color: var(--nord-frost-3);
   text-decoration: none;
+}
+
+.dark a {
+  color: var(--nord-frost-1);
+  display: inline-block;
 }
 
 .hamburger {
@@ -128,7 +133,7 @@ a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 0.25rem 0.5rem;
+  padding: 0rem 0.5rem;
   text-transform: uppercase;
 }
 
@@ -164,16 +169,33 @@ html.dark {
   color: inherit;
 }
 
-.dark .tag a {
-  color: blue;
-}
-
-.dark a {
-  color: white;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.tags {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: solid 2px var(--nord-polar-night-3);
+  border-radius: .5em;
+  padding: .5em 1em;
+  font-size: 1.15em;
+  background-color: var(--nord-snow-storm-2);
+  color: inherit;
+}
+
+.tag a {
+  color: inherit;
+  background-color: inherit;
+}
+
+.dark .tag {
+  background-color: var(--nord-polar-night-1);
+  border-color: var(--nord-snow-storm-0);
 }
