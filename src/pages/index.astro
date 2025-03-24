@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
+const skills = [
+'JS/TS',
+'React',
+'HTML Canvas',
+'HTML/CSS',
+'Docker',
+'Rest API/OpenAPI',
+'Java',
+'Python/Django',
+'Learning new things really fast',
+'Vim/Neovim',
+'And a bunch more things...'
+];
+const learning = [
+'Astro',
+'Figma',
+'Smithy',
+'Drizzle'
+];
+const interests = [
+'Researching things I need to figure out quickly',
+'Ultimate Frisbee',
+'Cycling',
+'Listening to music (Spotify Wrapped would prove it)',
+'Watching movies',
+'Slowly getting into reading books',
+'Photography',
+'Drawing',
+'A bit of gaming'
+];
+---
+
+<BaseLayout pageTitle="Hi!">
+  <p>
+  I'm Vince, a full-stack developer, full time since 2018, with a university degree in software development and IT engineering. Don't ask why I spent four years in university—the best justification I have is that it gave me more time to tinker before stepping into the industry. Yet, like everyone with a similar experience, I learned more in the first six months of my first job than in those four years of university.
+  </p>
+  <p>
+  I know a bit (enough to do some cool stuff) about:
+  </p>
+  <ul>
+  {skills.map((skill) => (
+    <li>{skill}</li>
+  ))}
+  </ul>
+  <p>
+  I'm currently learning:
+  </p>
+  <ul>
+  {learning.map((skill) => (
+    <li>{skill}</li>
+  ))}
+  </ul>
+  <p>
+  I'm a jack of all trades, master of none, but I work with enough different technologies to avoid getting bllsh*tted by magical tech hype while picking up new skills quickly.
+  </p>
+  <p>
+  When I'm not coding. I'm:
+  </p>
+  <ul>
+  {interests.map((skill) => (
+    <li>{skill}</li>
+  ))}
+  </ul>
+</BaseLayout>
